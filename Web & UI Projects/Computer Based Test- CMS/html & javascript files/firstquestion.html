@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		Maths Test
+		</title>
+	</head>
+	<body>
+		<h1>Maths Test</h1>
+		<img align="center" src="Graph.jpg" alt="some_text"><br><br>
+		<p>Given a Point (x1,y1) and (x2,y2) on the following axis. Please select correct line equation</p>
+		<form name="examform">
+			<input type="radio" name="1" value="1" id="1" data="4" data-type="maths">
+				<math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						<msup><mi>y</mi></msup>
+						<mo>=</mo>
+						<msup><mi>m</mi></msup>
+						<msup><mi>x</mi></msup>
+						<mo>+</mo>
+						<msup><mi>b</mi></msup>
+					</mrow>
+				</math>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;
+			<input type="radio" name="1" value="2" id="2">
+				<math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						<msup><mo>(<mo><msup>
+						<msup><mi>x</mi></msup>
+						<mo>&#x2212</mo>
+						<msup><mi>h</mi></msup>
+						<msup><mo>)<mo><msup>
+						<mn>2</mn>
+						<mo>+</mo>
+						<msup><mo>(<mo><msup>
+						<msup><mi>y</mi></msup>
+						<mo>&#x2212</mo>
+						<msup><mi>k</mi></msup>
+						<msup><mo>)<mo><msup>
+						<mn>2</mn>
+						<mo>=</mo>
+						<msup><mi>r</mi></msup>
+						<mn>2</mn>
+					</mrow>
+				</math>
+			<br>
+			<input type="radio" name="1" value="3" id="3">
+				<math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+						
+						<msup><mi>y</mi></msup>
+						<mo>&#x2212</mo>
+						<msup><mi>y1</mi></msup>
+						<mo>=</mo>
+						<msup><mi>m</mi></msup>
+						<msup><mo>(<mo><msup>
+						<msup><mi>x</mi></msup>
+						<mo>&#x2212</mo>
+						<msup><mi>x1</mi></msup>
+						<msup><mo>)<mo><msup>
+					</mrow>
+				</math>
+			&nbsp;&nbsp;
+			<br/>
+			<input type="radio" name="1" value="4" id="4">
+				<math xmlns="http://www.w3.org/1999/Math/MathML">
+					<mrow>
+						
+						<msup><mi>y</mi></msup>
+						<mo>&#x2212</mo>
+						<msup><mi>y2</mi></msup>
+						<mo>=</mo>
+						
+						<mfrac>
+							<mrow>
+								<msup><mi>y2</mi></msup>
+								<mo>&#x2212</mo>
+								<msup><mi>y1</mi></msup>
+							</mrow>
+							<mrow>
+								<msup><mi>x2</mi></msup>
+								<mo>&#x2212</mo>
+								<msup><mi>x1</mi></msup>
+							</mrow>
+						</mfrac>
+
+						<msup><mo>(<mo><msup>
+						<msup><mi>x</mi></msup>
+						<mo>&#x2212</mo>
+						<msup><mi>x2</mi></msup>
+						<msup><mo>)<mo><msup>
+					</mrow>
+				</math>
+			<br>
+			<br>
+			<button type="button" value="submit" onclick="checkAnswer(), location.href='secondquestion.html'">Submit & Next Question</button>
+			<br/>
+			<button type="button" value="ResetForm" onClick="this.form.reset()">Cancel & Clear Selection</button>
+		</form>
+	<script src="myscript.js"></script>
+	</body>
+</html>

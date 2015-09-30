@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Survey</title>
+</head>
+<body>
+How do you like the center?
+<br/>
+<br/>
+Comments:
+<form>
+<form method="post">
+        <textarea   cols="70" rows="7"></textarea> 
+        <br /> 
+</form>
+Select Text Area Location:
+<form method="get">
+City:
+<input list="City">
+<datalist id="City">
+  <option value="San Jose ">
+  <option value="San Francisco">
+  <option value="Fremont">
+  <option value="Tracy">
+  <option value="Santa Clara ">
+</datalist>
+&nbsp;&nbsp;&nbsp;
+Room Number 
+<input list="RoomNumber">
+<datalist id="RoomNumber">
+  <option value="Room 100 ">
+  <option value="Room 200">
+  <option value="Room 300">
+  <option value="Room 400">
+  <option value="Room 500">
+</datalist>
+<br/><br/><br/>
+<button type="button" onclick="window.location= 'ScoreCard.html';">Submit & Get Score</button>
+<br/>
+<button type="button" onclick="window.location= 'ScoreCard.html';">Skip & Get Score</button>
+</form>
+</body>
+</html>

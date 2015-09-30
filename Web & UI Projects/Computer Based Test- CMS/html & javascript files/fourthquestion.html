@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		Video question
+		</title>
+	</head>
+	<body>
+		<h1>Identify the video</h1>
+		
+		<video width="400" height="320" controls autoplay onloadeddata="ply()" id="spacevideo">
+		<source src="Space shuttle Atlantis final launch  NASA video of last take-off.MP4" type="video/mp4">
+		</video>
+
+		<br/><br/>
+		<p>Watch the video  and answer the following question.<br/>What is the source as mentioned in the video</p>
+		<form name="testform" method="get">
+			<input type="radio" name="video" id="1" value="1" data="1" data-type="video">
+				NASA.Gov
+			&nbsp;&nbsp;
+			<input type="radio" name="video" id="2" value="2">
+				Data.Gov
+			<br/>
+			<input type="radio" name="video" id="3" value="3">
+				Facebook
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="video" id="4" value="4">
+				XYZ.net
+			<br/>
+			<br/>
+			<button type="button" onclick="checkAnswer(), window.location= 'Survey.html';">Submit & Next Question</button>
+			
+			<button type="button" value="ResetForm" onClick="this.form.reset()"'>Cancel & Clear Selection</button>
+		</form>
+		<script src="myscript.js"></script>
+	</body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+    <title>chart</title>
+
+    <meta charset="utf-8" />
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+	<script type="text/javascript">
+	var meatToppings = JSON.parse(localStorage.getItem("meatToppings"));
+        var pepperoni=meatToppings.pepperoni;
+        var italian=meatToppings.italian;
+        var slicedItalian=meatToppings.slicedItalian;
+        var beef=meatToppings.beef;
+        var phillySteak=meatToppings.phillySteak;
+        var ham=meatToppings.ham;
+        var bacon=meatToppings.bacon;
+        var salami=meatToppings.salami;
+        var chicken=meatToppings.chicken;
+     
+    
+        var nonMeats = JSON.parse(localStorage.getItem("nonMeats"));
+        var cheddar=nonMeats.cheddar;
+        var feta = nonMeats.feta;
+        var parmesan = nonMeats.parmesan;
+        var provolone = nonMeats.provolone;
+        var banana = nonMeats.banana;
+        var olives = nonMeats.olives;
+        var garlic = nonMeats.garlic;
+        var green = nonMeats.green;
+        var jalapeno = nonMeats.jalapeno;
+        var mushrooms = nonMeats.mushrooms;
+        var pineapple = nonMeats.pineapple;
+        var onions = nonMeats.onions;
+        var roasted = nonMeats.roasted;
+        var spinach = nonMeats.spinach;
+		var diced = nonMeats.diced;
+		var hot = nonMeats.hot;
+    
+	</script>
+	
+	<script type="text/javascript">
+	google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data1 = google.visualization.arrayToDataTable([
+          ['Toppings', 'Amount'],
+          ['Pepperoni',     pepperoni],
+          ['Italian Sausage',      italian],
+          ['Sliced Italian Sausage',  slicedItalian],
+          ['Beef', beef],
+          ['Philly Steak',    phillySteak],
+          ['Ham', ham],
+          ['Bacon', bacon],
+          ['Salami', salami],
+          ['Premium Chicken', chicken]
+        ]);
+
+        var options1 = {
+          title: 'Selected Meat Toppings'
+        };
+
+        var chart1 = new google.visualization.PieChart(document.getElementById('piechart'));
+          
+        var data2 = google.visualization.arrayToDataTable([
+          ['Toppings', 'Amount'],
+          ['Cheddar Cheese',     cheddar],
+          ['Feta Cheese',      feta],
+          ['Shredded Parmesan Cheese', parmesan],
+          ['Shredded Provolone Cheese', provolone],
+          ['Banana Peppers',  banana],
+          ['Black Olives', olives],
+          ['Garlic',    garlic],
+          ['Green Peppers', green],
+          ['Jalapeno Peppers', jalapeno],
+          ['Mushrooms', mushrooms],
+          ['Pineapple', pineapple],
+          ['Onions', onions],
+          ['Roasted Red Peppers', roasted],
+          ['Spinach', spinach],
+          ['Diced Tomatoes', diced],
+          ['Hot Sauce', hot]
+        ]);
+
+        var options2 = {
+          title: 'Selected Non-Meat Toppings',
+          pieHole: '0.4'
+        	
+        };
+
+        var chart2 = new google.visualization.PieChart(document.getElementById('donutchart'));
+
+        chart1.draw(data1, options1);
+        chart2.draw(data2, options2);
+        }
+        </script>
+	
+<style type="text/css">
+
+body{ 
+		height:100%;
+		margin:0px;
+		position:absolute;
+		width:100%;
+		padding:0px;
+				
+	}
+	
+#container{
+        height: 100%;
+        width: 100%;
+       	margin:0px;
+       	padding:0px;
+       	position:absolute;
+        background-color: #FFFFFF;
+        }
+   
+#container_sub_div1{
+   	 	margin:0 auto;
+    	padding-top:0px;
+    	width:1080px;
+    	height:50px;
+    	border-style:outset;
+    	background-color:#bf3c39;
+    
+    }
+    
+#button{
+    		position:relative;
+    		top:10px;
+    		
+    	}
+    	
+#button1{
+    	
+    	margin-left:500px;
+    	font-size:1.2em;
+    	width:250px;
+    	height:50px;
+    	color:white;
+    	border-style:outset;
+    	background-color:black;
+    }
+    
+#piechart{
+    width: 600px; 
+    height: 450px; 
+    margin-left:50px; 
+    float:left; 
+    border-right: solid 1px;
+    }
+    
+#donutchart{
+    width: 600px; 
+    height: 450px; 
+    float:left;
+    }
+ 
+h3{
+      
+       	padding-top: 0px; 
+        font-family: Monaco, monospace;
+        font-size: 1.2em;
+        color: black;
+    	text-align: center;
+    }
+    
+h2{
+    margin:0 auto;
+    text-align:center;
+    padding-top:13px;
+    color: white;
+
+}
+   
+ </style>    
+</head>
+
+<body>
+
+<div id="container">
+    <h3>Build Your Own Pizza</h3>
+    
+    	<div id="container_sub_div1">
+    			
+    				<h2> Dashboard </h2>
+    		
+    	</div>
+    	<div id="piechart"></div>
+    	<div id="donutchart"></div>
+    
+		<div id="button">
+    		<input id="button1" type= "button" onclick="location.href='build-pizza.html'" value= "Home">
+		</div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/process_data_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:singleLine="false"
+        android:text="Process Data Activity"
+        android:textAlignment="center"
+        android:textColor="@id/process_data_label"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/processing_credit_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/process_data_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Processing credit card..." />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/processing_credit_card"
+        android:layout_below="@+id/processing_credit_card"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="42dp"
+        android:text="Result" />
+
+    <RadioButton
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/error"
+        android:layout_alignBottom="@+id/error"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:text="Success" />
+
+    <RadioButton
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/result"
+        android:text="Error" />
+
+    <Button
+        android:id="@+id/complete_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Complete Process" />
+
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+    <title>Toppings</title>
+
+    <meta charset="utf-8" />
+	<script type="text/javascript" src=localstorage.js>
+	</script>
+    <style type="text/css">
+
+body{ 
+		height:100%;
+		margin:0px;
+		position:absolute;
+		width:100%;
+		padding:0px;
+				
+	}
+	
+    #container{
+        height: 100%;
+        width: 100%;
+       	margin:0px;
+       	padding:0px;
+       	position:absolute;
+        background-color: #4F81BC;
+        }
+    #container_sub_div1{
+        height: 80px;
+        width: 1150px;
+        border-style:none;
+       	margin:0 auto;
+       	position:relative;
+       	padding-top:5px;
+        background-color: #FFFFFF;
+        }
+    #container_sub_div2{
+    	margin: 0 auto;
+    	position:relative;
+    	top:0px;
+    	padding-top:1px;
+    	padding-left:5px;
+    	width:1130px;
+    	height:375px;
+    	border-style:none;
+    	background-color:#e6e6e6;
+    
+    }
+    
+    #container_sub_div2_sub_container{
+    	position:relative;
+    	top:0;
+    	margin:0px;
+    	padding:0px;
+    	width:1130px;
+    	height:350px;
+    	}
+    .headings{
+    	color:#1280b4;
+    	position:relative;
+    	font-family:Monaco, monospace;
+    	margin-left:5px;
+    }
+    .content{
+    	font-family:Monaco, monospace;
+		margin-top:0px;
+		font-size:12px;
+		position:relative;
+		top:0;
+		margin-left:5px;    
+    }
+    
+   
+    .pizza-divs{
+    	padding:0;
+    	margin:0px;
+    	float:left;
+    	height:250px;
+    	width:280px;
+    	
+    }
+   
+    #pizza-divs-border{
+    	border-right:2px solid #cfcfcf;
+    }
+    #pizza-padding{
+    padding-top:54px;
+    
+    }
+    #button{
+    		position:relative;
+    		top:10px;
+    	}
+    #button1{
+    	
+    	
+    	margin-left:350px;
+    	font-size:1.2em;
+    	width:250px;
+    	height:50px;
+    	color:white;
+    	border-style:outset;
+    	background-color:black;
+    }
+    
+     #button2{
+    	
+    	
+    
+    	font-size:1.2em;
+    	position:relative;
+    	left:50px;
+    	border-style:outset;
+    	width:250px;
+    	height:50px;
+    	color:white;
+    	background-color:black;
+    }
+   
+   
+    #level2_sub_div1{
+    margin: 5px;
+    padding-top:0px;
+    width:1130px;
+    height:60px;
+    border-radius:40px;
+    border-style:groove;
+    background-color:#1280b4;
+    
+    }
+   
+    
+    h3{
+      
+       	padding-top: 0px; 
+        font-family: Monaco, monospace;
+        font-size: 1.2em;
+        color: white;
+    	text-align: center;
+    }
+    h2{
+    margin:0 auto;
+    text-align:center;
+    padding-top:13px;
+    
+
+    }
+   
+    #level3_sub_div1{
+      
+       	padding:0; 
+        font-family: Monaco, monospace;
+     
+        color: white;
+        margin: 0;
+        float:left;
+    	
+    	height:60px;
+    	width:351px;
+    	background-color:#fd090a;
+    	border-top-left-radius:40px;
+    	border-bottom-left-radius:40px;
+    	
+    
+    }
+     #level3_sub_div2{
+      
+       	padding:0; 
+        font-family: Monaco, monospace;
+     
+        color:white;
+        margin:0;
+        float:left;
+    	
+    	height:60px;
+    	width:351px;
+    	background-color:#2f8fbd; 
+    }
+     #level3_sub_div3{
+      
+       	padding:0; 
+        font-family: Monaco, monospace;
+     
+        color:white;
+        margin:0;
+        float:left;
+    	
+    	height:60px;
+    	width:265px;
+    	background-color:#1280b4; 
+    }
+    #triangle_right{
+    padding:0;
+    margin:0;
+   	float:left;
+    width: 0;
+    height: 0;
+    border-top:30px solid transparent;
+    border-left:60px solid #fd090a;
+    border-bottom:30px solid transparent;
+    }
+
+    #triangle_right1{
+    padding:0;
+    margin:0;
+   	float:left;
+    width: 0;
+    height: 0;
+    border-top:30px groove transparent;
+    border-left:60px solid #2f8fbd;
+    border-bottom:30px groove transparent;
+    }
+    
+    }
+    </style>    
+</head>
+
+<body>
+
+<div id="container">
+    <h3>Build Your Own Pizza</h3>
+    
+    	<div id="container_sub_div1">
+    
+    		<div id="level2_sub_div1">
+    
+    				<div id="level3_sub_div1" onclick="location.href='build-pizza.html'">
+    					<h2> SIZE & CRUST </h2>
+    				</div>
+    			
+    				<div id="triangle_right"></div>
+    			
+    				<div id="level3_sub_div2">
+    					<h2> CHEESE & SAUCE </h2>
+    				</div>
+    			
+    				<div id="triangle_right1"></div>
+    			
+    				<div id="level3_sub_div3" onclick="location.href='toppings.html'"> 
+    					<h2>TOPPINGS <h2>
+    				</div>
+    
+    		</div>
+    		
+    	</div>
+    	<div id="container_sub_div2">
+    		    			<p class="headings"><strong>CHOOSE TOPPINGS</strong></p>
+    		
+			<div id="container_sub_div2_sub_container">
+    			
+    			<div class ="pizza-divs">
+    			<p class="headings">CHOOSE MEATS</p>		
+    			
+    			<p class="content"><input type="checkbox" name="meats" value="Pepperoni" id="pepperoni">Pepperoni</p>
+    			<p class="content"><input type="checkbox" name="meats" value="Italian Sausage" id="italian_sausage">Italian Sausage</p>
+    			<p class="content"><input type="checkbox" name="meats" value="Sliced Italian Sausage" id="sliced_italian">Sliced Italian Sausage </p>
+    			<p class="content"><input type="checkbox" name="meats" value="Beef" id="beef">Beef</p>
+    			<p class="content"><input type="checkbox" name="meats" value="Philly Steak" id="philly_steak">Philly Steak</p>
+    			<p class="content"><input type="checkbox" name="meats" value="Ham" id="ham">Ham</p>
+    			<p class="content"><input type="checkbox" name="meats" value="Bacon" id="bacon">Bacon</p>
+    			</div>
+    			<div class ="pizza-divs" id="pizza-divs-border">
+    			<p class="content" id="pizza-padding"><input type="checkbox" name="meats" value="Salami" id="salami">Salami</p>
+    			<p class="content"><input type="checkbox" name="meats" value="Premium Chicken" id="premium_chicken">Premium Chicken</p>
+    			</div>
+    			
+    			<div class ="pizza-divs">
+    			<p class="headings">CHOOSE NON-MEATS</p>	
+    			<p class="content"><input type="checkbox" name="non-meats" value="Cheddar Cheese" id="cheddar_cheese">Cheddar Cheese</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Feta Cheese" id="feta_cheese">Feta Cheese</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Shredded Parmesan Asiago" id="shredded_parmesan">Shredded Parmesan Asiago </p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Shredded Provolone Cheese" id="shredded_provolone">Shredded Provolone Cheese</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Banana Peppers" id="banana_peppers">Banana Peppers</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Black Olives" id="black_olives">Black Olives</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Garlic" id="garlic">Garlic</p>
+    			</div>
+    			<div class="pizza-divs" id="pizza-padding">
+    			<p class="content"><input type="checkbox" name="non-meats" value="Green Peppers" id="green_peppers">Green Peppers</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Jalapeno Peppers" id="jalapeno_peppers">Jalapeno Peppers</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Mushrooms" id="mushrooms">Mushrooms</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Pineapple" id="pineapple">Pineapple</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Onions" id="onions">Onions</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Roasted Red Peppers" id="roasted_red">Roasted Red Peppers</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Spinach" id="spinach">Spinach</p>
+    			<p class="content"><input type="checkbox" name="non-meats" value="Diced Tomatoes" id="diced_tomatoes">Diced Tomatoes</p>
+     			<p class="content"><input type="checkbox" name="non-meats" value="Hot Sauce" id="hot_sauce">Hot Sauce</p>
+    			</div>
+    			
+			</div>
+    	</div>
+	<div id="button">
+    	<a href="chart.html"> <input id="button1" type= "submit" value= "Build" onclick="save()"> </a>
+    	<input id="button2" type= "button" onclick="location.href='build-pizza.html'" value= "Cancel">
+	</div>
+</div>
+
+</body>
+</html>
+
+

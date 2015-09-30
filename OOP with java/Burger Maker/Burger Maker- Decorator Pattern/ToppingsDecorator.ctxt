@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=tempBurger
+comment0.target=ToppingsDecorator(Burger)
+comment1.params=
+comment1.target=java.lang.String\ getDescription()
+comment2.params=
+comment2.target=double\ getCost()
+numComments=3
